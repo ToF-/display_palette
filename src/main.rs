@@ -82,6 +82,7 @@ fn draw_image(ctx: &Context, palette: &Vec<Color>) {
     let context = Context::new(&surface).expect("Can't create context");
 
     for (i, color) in palette.iter().enumerate() {
+        println!("{:?} {:?}", i, color);
         let red   = color.r as f64 / 255.0;
         let green = color.g as f64 / 255.0;
         let blue  = color.b as f64 / 255.0;
